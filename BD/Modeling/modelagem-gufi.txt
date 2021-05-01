@@ -1,0 +1,38 @@
+PROJETO GUFI - RASCUNHO DA MODELAGEM
+
+instituicoes -- ENTIDADE
+idInstituicao -- ATRIBUTO
+cnpj -- ATRIBUTO
+nomeFantasia -- ATRIBUTO || por exemplo, "coca-cola ltda."(é o nome real da empresa), mas pra ficar mais simples, fica apenas "coca-cola"
+endereco -- ATRIBUTO
+
+tiposUsuarios
+idTipoUsuario
+tituloTipoUsuario
+
+usuarios
+idUsuario
+idTipoUsuario
+nomeUsuario
+email
+senha
+
+tiposEventos
+idTipoEvento
+tituloTipoEvento
+
+eventos
+idEvento
+idTipoEvento
+idInstituicao
+nomeEvento
+acessoLivre
+dataEvento
+descricao
+
+presencas -- tabela intermediaria
+idPresenca
+idUsuario
+idEvento
+situacao
+
